@@ -1,0 +1,26 @@
+<%-- 
+    Document   : thank
+    Created on : Nov 6, 2025, 2:18:59 PM
+    Author     : baothinh
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+
+<body>
+    <h1>Thanks for joining our email list</h1>
+
+    <p>Here is the information that you entered:</p>
+
+    <label>Email:</label>
+    <span>${user.email}</span><br>
+    <label>First Name:</label>
+    <span>${user.firstName}</span><br>
+    <label>Last Name:</label>
+    <span>${user.lastName}</span><br>

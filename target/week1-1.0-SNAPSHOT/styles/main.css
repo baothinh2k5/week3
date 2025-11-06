@@ -1,0 +1,52 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 6, 2025, 1:59:45 PM
+    Author     : baothinh
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 2em;  /* chỉ hơi cách mép trái 1 chút */
+    margin-right: 2em;
+}
+
+h1 { 
+    color: teal;
+}
+
+/* ----- FORM căn thẳng trái ----- */
+form {
+    margin-left: 0;       /* form dính lề trái */
+    width: 400px;         /* chiều rộng gọn vừa */
+}
+
+/* label và input nằm cùng hàng, label có cùng độ rộng */
+label {
+    display: inline-block;
+    width: 100px;          /* cố định độ rộng cho label */
+    margin-bottom: 6px;
+}
+
+/* textbox thẳng hàng nhau */
+input[type="text"],
+input[type="email"] {
+    width: 250px;          /* cùng chiều rộng */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* nút Join Now thẳng với các textbox */
+#submit {
+    margin-left: 100px;    /* bằng đúng width của label */
+    padding: 6px 14px;
+}
+
+
+
+
+
+
+
