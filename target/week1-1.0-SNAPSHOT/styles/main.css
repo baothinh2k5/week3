@@ -6,43 +6,92 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : Nov 6, 2025, 1:59:45 PM
     Author     : baothinh
 */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;
-    margin-left: 2em;  /* chỉ hơi cách mép trái 1 chút */
-    margin-right: 2em;
-}
-
-h1 { 
-    color: teal;
-}
-
-/* ----- FORM căn thẳng trái ----- */
 form {
-    margin-left: 0;       /* form dính lề trái */
-    width: 400px;         /* chiều rộng gọn vừa */
+  text-align: left;      /* Căn chữ và các phần tử sang trái */
+  margin-left: 0;        /* Xóa khoảng cách bên trái (nếu có) */
+  padding-left: 0;
 }
 
-/* label và input nằm cùng hàng, label có cùng độ rộng */
+body {
+  text-align: left;      /* Đảm bảo toàn trang căn trái */
+  margin-left: 20px;     /* (Tùy chọn) tạo khoảng cách nhỏ bên trái */
+}
+
+
+h2 {
+    color: #007777;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.logo {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+legend {
+    font-weight: bold;
+    color: #007777;
+    margin-bottom: 8px;
+}
+
 label {
     display: inline-block;
-    width: 100px;          /* cố định độ rộng cho label */
-    margin-bottom: 6px;
+    width: 120px;
+    margin-bottom: 8px;
+    vertical-align: top;
 }
 
-/* textbox thẳng hàng nhau */
 input[type="text"],
-input[type="email"] {
-    width: 250px;          /* cùng chiều rộng */
-    padding: 5px;
-    box-sizing: border-box;
+input[type="email"],
+input[type="date"] {
+    width: 220px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-/* nút Join Now thẳng với các textbox */
-#submit {
-    margin-left: 100px;    /* bằng đúng width của label */
-    padding: 6px 14px;
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
 }
+
+select {
+    padding: 4px;
+    margin-top: 4px;
+}
+
+#submit {
+    margin-top: 15px;
+    padding: 6px 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #888;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #e6e6e6;
+}
+
 
 
 
