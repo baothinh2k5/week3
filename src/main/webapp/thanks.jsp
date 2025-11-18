@@ -1,49 +1,53 @@
-<%-- 
-    Document   : thank
-    Created on : Nov 6, 2025, 2:18:59 PM
-    Author     : baothinh
---%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-</head>
+<%@ include file="/includes/header.html" %>
 
-<body>
-    <h1>Thanks for joining our email list</h1>
+<h1>Thanks for joining our email list</h1>
 
-    <p>Here is the information that you entered:</p>
+<p>Here is the information that you entered:</p>
 
-    <div style="margin-left: 20px;">
+<div style="margin-left: 20px;">
+    <p>
         <label>Email:</label>
-        <span>${user.email}</span><br>
+        <span>${user.email}</span>
+    </p>
 
+    <p>
         <label>First Name:</label>
-        <span>${user.firstName}</span><br>
+        <span>${user.firstName}</span>
+    </p>
 
+    <p>
         <label>Last Name:</label>
-        <span>${user.lastName}</span><br>
+        <span>${user.lastName}</span>
+    </p>
 
+    <p>
         <label>Date of Birth:</label>
-        <span>${dob}</span><br>
+        <span>${dob}</span>
+    </p>
 
+    <p>
         <label>How did you hear about us?</label>
-        <span>${source}</span><br>
+        <span>${source}</span>
+    </p>
 
+    <p>
         <label>Announcements:</label>
-        <span>${likeAnnouncements}</span><br>
+        <span>${likeAnnouncements}</span>
+    </p>
 
+    <p>
         <label>Email Announcements:</label>
-        <span>${emailAnnouncements}</span><br>
+        <span>${emailAnnouncements}</span>
+    </p>
 
+    <p>
         <label>Preferred Contact:</label>
-        <span>${contact}</span><br>
-    </div>
+        <span>${contact}</span>
+    </p>
+</div>
 
-    <p><a href="index.html">Return to the form</a></p>
-</body>
-</html>
+<p><a href="index.jsp">Return to the form</a></p>
+
+<%@ include file="/includes/footer.jsp" %>

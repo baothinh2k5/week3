@@ -1,32 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package murach.business;
 
-/**
- *
- * @author baothinh
- */
 import java.io.Serializable;
 
 public class User implements Serializable {
+
+    private String email;
     private String firstName;
     private String lastName;
-    private String email;
+    private String heardFrom;
+    private String updates;
+    private String contactVia;
 
-    public User() {
-        firstName = "";
-        lastName = "";
-        email = "";
-    }
+    // Constructor không tham số
+    public User() {}
 
-    public User(String firstName, String lastName, String email) {
+    // Constructor có tham số
+    public User(String email, String firstName, String lastName,
+                String heardFrom, String updates, String contactVia) {
+        this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.heardFrom = heardFrom;
+        this.updates = updates;
+        this.contactVia = contactVia;
+    }
+
+    // Getter và Setter cho email
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
     }
 
+    // Getter và Setter cho firstName
     public String getFirstName() {
         return firstName;
     }
@@ -35,6 +43,7 @@ public class User implements Serializable {
         this.firstName = firstName;
     }
 
+    // Getter và Setter cho lastName
     public String getLastName() {
         return lastName;
     }
@@ -43,13 +52,30 @@ public class User implements Serializable {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
-        return email;
+    // Getter và Setter cho heardFrom
+    public String getHeardFrom() {
+        return heardFrom;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setHeardFrom(String heardFrom) {
+        this.heardFrom = heardFrom;
+    }
+
+    // Getter và Setter cho updates
+    public String getUpdates() {
+        return updates;
+    }
+
+    public void setUpdates(String updates) {
+        this.updates = updates;
+    }
+
+    // Getter và Setter cho contactVia
+    public String getContactVia() {
+        return contactVia;
+    }
+
+    public void setContactVia(String contactVia) {
+        this.contactVia = contactVia;
     }
 }
-
-
